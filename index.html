@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body
+    class="min-h-screen flex flex-col items-center justify-center gap-y-3 bg-gradient-to-br from-yellow-300 via-red-400 to-blue-500">
+
+    <div class="text-5xl md:text-7xl tracking-tight">
+        <h1 class="font-semibold flex flex-wrap items-center justify-center font-['Baloo_2']">Search for a <span><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/3840px-International_Pok%C3%A9mon_logo.svg.png"
+                    alt="pokemon" class="h-[10rem]"></span></h1>
+    </div>
+    <form action="#" class="flex border rounded-lg border-black">
+        <input type="text" class="text-black text-xl md:text-2xl p-2 rounded-tl-lg 
+        rounded-bl-lg font-sans"
+            placeholder="Search for a pokemon!">
+        <button class="submit"><span
+                class="md:text-3xl p-2 md:p-1 text-white text-xl bg-red-500 rounded-tr-lg rounded-br-lg">Find</span></button>
+    </form>
+
+    <div class="flex gap-x-5 flex-wrap justify-center items-center font-semibold text-gray-800" id="pokemonContainer">
+
+    </div>
+
+    <h2 id="error"></h2>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
